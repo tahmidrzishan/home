@@ -54,6 +54,11 @@ body {
   
   section {
     margin: 20px 0;
+    padding: 30px;
+  }
+
+  section h2{
+    font-size: 30px;
   }
   
   footer {
