@@ -1,42 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Portfolio - Tahmid Zishan</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Tahmid R Zishan</title>
+
 </head>
 <body>
-  <header>
-    <h1>Portfolio - Tahmid Zishan</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#coding">Coding</a></li>
-      <li><a href="#graphics-design">Graphics Design</a></li>
-      <li><a href="#video-editing">Video Editing</a></li>
-      <li><a href="#motion-graphics">Motion Graphics</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section id="programming">
-      <h2>Coding</h2>
-      <!-- Add a list of your programming projects here -->
-      <p>I'm skilled in programming with Python. I'm also familiar with C, HTML, CSS etc.</p>
-    </section>
-    <section id="graphics-design">
-      <h2>Graphics Design</h2>
-      <!-- Add a list of your graphics design projects here -->
-    </section>
-    <section id="video-editing">
-      <h2>Video Editing</h2>
-      <!-- Add a list of your video editing projects here -->
-    </section>
-    <section id="motion-graphics">
-      <h2>Motion Graphics</h2>
-      <!-- Add a list of your motion graphics projects here -->
-    </section>
-  </main>
-  <footer>
-    <p>Copyright Tahmidur Rahman Zishan, 2023</p>
-  </footer>
+    <header>
+        <nav>
+            <div class="left">Tahmid R Zishan</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi! My name is <span class="purple">Zishan</span>
+                <div>and I am not much of a</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="images/bg.png" alt="web dev">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+
+        </section>
+    </main>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+        strings: ['Graphic Designer', 'Video Editor', 'Programmer', 'Web Developer'],
+        typeSpeed: 80,
+        });
+    </script>
 </body>
 </html>
