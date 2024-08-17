@@ -10,11 +10,14 @@ body{
 }
 
 nav{
+    position: fixed;
+    margin-top: 0;
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 80px;
-    background-color: rgb(8, 8, 36);
+    height: 60px;
+    background-color: rgb(8, 8, 40);
 }
 
 nav ul{
@@ -30,6 +33,7 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: white;
+    transition: 0.5s;
 }
 
 nav ul li a:hover{
@@ -39,22 +43,24 @@ nav ul li a:hover{
 
 main hr{
     border: 0;
-    background: rgb(151, 151, 255);
-    height: 1 px;
+    background: rgb(111, 134, 209);
+    height: 1px;
     margin: 40px 80px;
+    margin-top: 0;
 }
+
 .left{
     font-size: 1.5rem;
 }
 
-.firstSection{
+#home{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 40px 0;
+    height: 93vh;
 }
 
-.firstSection > div{
+#home > div{
     width: 30%;
 }
 
@@ -63,7 +69,7 @@ main hr{
 }
 
 .rightSection img{
-    width: 90%;
+    width: 100%;
     
 }
 
@@ -74,3 +80,70 @@ main hr{
 #element{
     color: rgb(212, 76, 212);
 }
+
+#projects{
+    max-width: 80vw;
+    margin: auto;
+    margin-bottom: 10px;
+    height: 80vh;
+}
+
+#projects h1{
+    font-size: 1.6rem;
+}
+
+.text-gray{
+    color: gray;
+}
+
+.boxes{
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box{
+    height: 315px;
+    width: 200px;
+    background-color: rgb(8, 8, 40);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.box:hover{
+    height: 325px;
+    width: 220px;
+    background-color: rgb(27, 27, 87);
+    border-radius: 30px;
+}
+
+.box:hover .image{
+    height: 170px;
+    width: 170px;
+    border-radius: 25px;
+}
+
+.box .image{
+    height: 150px;
+    width: 150px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.box .title{
+    height: 4rem;
+    margin: 20px 20px;
+    text-align: center;
+}
+
+.boxes a{
+    text-decoration: none;
+    color: white;
+}
+
