@@ -1,0 +1,235 @@
+html{
+    scroll-snap-type: y proximity;
+}
+
+body{
+    background-color: rgb(8, 7, 0);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*------------- nav bar ---------------*/
+
+nav{
+    position: fixed;
+    margin-top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: rgb(0, 19, 24);
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    color: rgb(255, 187, 0);
+}
+
+.left{
+    font-size: 1.5rem;
+}
+
+/*------------ Home Section --------------*/
+
+#home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    scroll-snap-align: start;
+    margin-bottom: 80px;
+}
+
+#home > div{
+    width: 30%;
+}
+
+.leftSection{
+    font-size: 2rem;
+}
+
+.rightSection img{
+    width: 100%;
+    
+}
+
+.purple{
+    color: rgb(255, 187, 0);
+}
+
+#element{
+    color: rgb(255, 187, 0);
+}
+
+/*-------------------- Projects --------------------*/
+
+#projects{
+    max-width: 80vw;
+    margin: auto;
+    /* margin-top: 80px; */
+    padding-top: 80px;
+    height: 90vh;
+    scroll-snap-align: start;
+}
+
+#projects h1{
+    font-size: 1.6rem;
+}
+
+.text-gray{
+    color: gray;
+}
+
+.boxes{
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box{
+    height: 315px;
+    width: 200px;
+    background-color: rgb(0, 19, 24);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.box:hover{
+    color: black;
+    background-color: rgba(255, 196, 0, 0.8);
+    border-radius: 30px;
+}
+
+.box:hover .image{
+    height: 170px;
+    width: 170px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 2px;
+}
+
+.box .image{
+    height: 150px;
+    width: 150px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.box .title{
+    height: 4rem;
+    margin: 20px 20px;
+    text-align: center;
+}
+
+.boxes a{
+    text-decoration: none;
+    color: white;
+}
+
+/*-------------------------- Contact -------------------------*/
+
+#contact{
+    height: 90vh;
+    width: 80vw;
+    margin: auto;
+    padding-top: 80px;
+    scroll-snap-align: start;
+}
+
+#contact h1{
+    font-size: 1.6rem;
+}
+
+#contact a{
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+
+.mailme{
+    height: 90px;
+    width: 420px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    transition: 0.5s;
+    background-color: rgb(0, 19, 24);
+}
+
+.mailme:hover{
+    background-color: rgb(0, 24, 20);
+} 
+
+.mailme:hover i{
+    transition: 0.5s;
+    color: rgb(255, 187, 0);
+}
+
+#links{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+
+}
+
+.link{
+    background-color: rgb(0, 19, 24);
+    height: 56px;
+    width: 56px;
+    border-radius: 60px;
+    transition: 0.5s;
+}
+
+.link:hover{
+    background-color: rgb(255, 187, 0);
+}
+
+#links img{
+    margin-top: -2px;
+    margin-left: -2px;
+    height: 60px;
+}
+
+
+.copyright{
+    margin-top: 15vh;
+    text-align: center;
+}
+
+.uname:hover{
+    transition: 0.5s;
+    color: rgb(255, 187, 0);
+}
