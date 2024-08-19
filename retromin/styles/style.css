@@ -1,0 +1,226 @@
+/* html{
+    scroll-snap-type: y proximity;
+} */
+
+body{
+    /* background-color: rgb(8, 7, 0);
+    color: white;
+    font-family: "Poppins", sans-serif; */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*------------- nav bar ---------------*/
+
+nav{
+    position: fixed;
+    margin-top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 6vh;
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    background-color: rgb(202, 202, 202);
+}
+
+.left{
+    font-size: 1.5rem;
+}
+
+/*------------ Home Section --------------*/
+
+#home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* height: 100vh; */
+    /* scroll-snap-align: start; */
+    /* margin-bottom: 80px; */
+}
+
+#home > div{
+    width: 30%;
+}
+
+.leftSection{
+    font-size: 2rem;
+}
+
+.rightSection img{
+    width: 100%;
+    
+}
+
+.purple{
+    color: rgb(0, 49, 65);
+}
+
+#element{
+    color: rgb(0, 12, 66);
+}
+
+/*-------------------- Projects --------------------*/
+
+#projects{
+    max-width: 80vw;
+    margin: auto;
+    /* margin-top: 80px; */
+    height: 90vh;
+}
+
+#projects h1{
+    font-size: 1.6rem;
+}
+
+.text-gray{
+    color: gray;
+}
+
+.boxes{
+    width: 50vw;
+    margin: auto;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box{
+    height: 240px;
+    width: 130px;
+    background-color: rgb(224, 224, 224);
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.box:hover{
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+.box:hover .image{
+    height: 110px;
+    width: 110px;
+    box-shadow: 0px 0px 10px 2px;
+}
+
+.box .image{
+    height: 100px;
+    width: 100px;
+    border: solid 2px black;
+    transition: 0.5s;
+}
+
+.box .title{
+    height: 4rem;
+    margin: 20px 20px;
+    text-align: center;
+}
+
+.boxes a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/*-------------------------- Contact -------------------------*/
+
+#contact{
+    /* height: 90vh; */
+    width: 80vw;
+    margin: auto;
+}
+
+#contact h1{
+    font-size: 1.6rem;
+}
+
+#contact a{
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+
+.mailme{
+    height: 30px;
+    width: 380px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.mailme:hover i{
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+#links{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 30vw;
+
+}
+
+.link{
+    background-color: rgb(196, 196, 196);
+    height: 38px;
+    width: 38px;
+    border-radius: 36px;
+    transition: 0.5s;
+}
+
+.link:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+#links img{
+    margin-top: -2px;
+    margin-left: -2px;
+    height: 40px;
+}
+
+
+.copyright{
+    margin-top: 10vh;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.uname:hover{
+    transition: 0.5s;
+    color: rgb(255, 187, 0);
+}

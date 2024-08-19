@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Tahmidur Rahman Zishan</title>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Tahmidur Rahman <span class="purple">Zishan</span></div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://buymeacoffee.com/tahmidrzishan" target="_blank">BuyMeACoffee</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <section id="home">
+            <div class="leftSection">
+                I am <span class="purple">Zishan</span>
+                <div>and I am a</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="images/bg.png" alt="web dev">
+            </div>
+        </section>
+        <hr>
+        <section id="projects">
+            <br>
+            <br>
+            <div class="text-gray">What I have done recently</div>
+            <h1>Projects</h1>
+            <div class="boxes">
+                <a href="https://github.com/tahmidrzishan/instaclone" target="_blank">
+                    <div class="box">
+                            <div class="image" style="background-image: url('images/insta.png'); background-size: cover;"></div>
+                            <div class="title">Instagram Clone</div>
+                    </div>
+                </a>
+                <a href="https://github.com/tahmidrzishan/brackeys-godot-2d" target="_blank">
+                    <div class="box">
+                            <div class="image" style="background-image: url('images/brackey.jpg'); background-size: cover;"></div>
+                            <div class="title">Brackeys Godot 2D Game</div>
+                    </div>
+                </a>
+                <a href="https://github.com/tahmidrzishan/fbdummy" target="_blank">
+                    <div class="box">
+                            <div class="image" style="background-image: url('images/fb.png'); background-size: cover;"></div>
+                            <div class="title">Mobile Facebook Clone</div>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/@tahmidrzishan/videos" target="_blank">
+                    <div class="box">
+                            <div class="image" style="background-image: url('images/yt.jpg'); background-size: cover;"></div>
+                            <div class="title">Youtube Videos</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <hr>
+        <section id="contact">
+            <br>
+            <br>
+            <div class="text-gray">Reach out to me</div>
+            <h1>Contact Me</h1>
+            <div class="mailme">Email Me:  &nbsp; <i>tahmidzishan53@gmail.com</i></div>
+            <div id="links">
+                <a href="https://github.com/tahmidrzishan" target="_blank"><div class="link"><img src="icons/github.png" alt=""></div></a>
+                <a href="https://x.com/tahmidrzishan" target="_blank"><div class="link"><img src="icons/x.png" alt=""></div></a>
+                <a href="https://www.youtube.com/@tahmidrzishan" target="_blank"><div class="link"><img src="icons/youtube.png" alt=""></div></a>
+                <a href="https://www.facebook.com/tahmidrzishan" target="_blank"><div class="link"><img src="icons/facebook.png" alt=""></div></a>
+                <a href="https://www.instagram.com/tahmidrzishan" target="_blank"><div class="link"><img src="icons/instagram.png" alt=""></div></a>
+            </div>
+            <div class="text-gray copyright">Copyright &copy; <span class="uname">tahmidrzishan</span></div>
+        </section>
+    </main>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+        strings: ['....................', 'Content Creator', 'Programmer', 'Web Developer'],
+        typeSpeed: 80,
+        });
+    </script>
+</body>
+</html>
